@@ -1,7 +1,8 @@
-import config from "@rocketseat/eslint-config";
+import rocketseatConfig from "@rocketseat/eslint-config";
 
-
-/** @type {import('eslint').Linter.Config[]} */
 export default [
-  ...[].concat(config),
+  ...rocketseatConfig,
+  {
+    files: ["**/*.ts", "**/*.tsx"],
+  },
 ];
